@@ -104,6 +104,42 @@ body[data-theme="dark"] {
 }
 
 /* ========== HERO ========== */
+/* ========== HERO ========== */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  background: url('https://source.unsplash.com/1600x900/?tulip-garden') center/cover no-repeat;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);  /* dark overlay to enhance text legibility */
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease forwards;
+  opacity: 0;
+}
+
+.hero-content .contact-line {
+  font-size: 1rem;
+  animation: fadeInUp 1s ease 0.5s forwards;
+  opacity: 0;
+}
 #hero {
   display: flex;
   align-items: center;
